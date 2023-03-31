@@ -1,0 +1,209 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.full {
+  width: 100%;
+  display: flex;
+}
+
+#sidebar {
+  width: 15vw;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 100vh;
+}
+
+#sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar li {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  display: block;
+  /* remove line from the link */
+  text-decoration: none;
+  color: #666;
+}
+
+#sidebar a:hover {
+  color: #000;
+}
+.upperpart {
+  width: 100%;
+}
+.upperpart img {
+  width: 1350px;
+  height: 600px;
+}
+.navi {
+  margin-top: 15px;
+  display: flex;
+}
+
+.dropdown {
+  margin: 10px 150px 0 150px;
+}
+
+.dropdown-menu {
+  width: 300%;
+  height: 700%;
+  background-size: 105%;
+  filter: brightness(80%);
+  z-index: 1;
+}
+
+.dropdown-menu a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#appetizers  {
+  background-image: url("imgs/image\ \(1\).jpeg");
+  
+}
+
+#main-dishes {
+  background-image: url("imgs/image\ \(5\).jpeg");
+}
+
+#dessert {
+  background-image: url("imgs/image\ \(4\).jpeg");
+}
+
+.dropdown-item {
+  color: #f4eded;
+}
+
+.popups {
+  width: 400px;
+  margin: auto;
+  left: calc(50vw - 200px);
+  top: calc(40vh - 150px);
+  height: 350px;
+  position: absolute;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.popups #loginMenu{
+  position: relative;
+  top: 50px;
+}
+
+.popups #loginMenu input{
+  margin: 10px;
+}
+
+.popups #signupMenu{
+  position: relative;
+  top: 20px;
+}
+
+.popups .maprouter {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  left: 0;
+}
+
+.popups #aboutMenu{
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 350px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.orderList{
+  position: absolute;
+  right: 1%;
+  top: 20px;
+  width: 200px;
+}
+
+.orderList a{
+  position: relative;
+  left: 25px;
+  text-decoration: none;
+  color: #666;
+  font-size: 30px;
+  background-color: white;
+  filter: opacity(70%);
+  padding: 10px;
+}
+
+.orderList a:hover {
+  color: white;
+  background-color: black;
+  filter: opacity(100%);
+}
+
+.orderList .orders{
+  list-style-type: none;
+  position: relative;
+  top: 10px;
+  background-color: white;
+  filter: opacity(70%);
+}
+
+.orderList .orders li .orderName{
+  position: absolute;
+  left: 10px;
+
+
+  width: 80px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orderList .orders li .count{
+  position: absolute;
+  left: 100px;
+}
+
+.orderList .orders li .add{
+  position: absolute;
+  left: 150px;
+}
+
+.orderList .orders li .minus{
+  position: relative;
+  left: 140px;
+}
+
+.orderList .orders li .add:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.orderList .orders li .minus:hover{
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1500px) {
+  .navi{
+    flex-direction: column;
+  }
+
+
+  .upperpart img {
+    width: 85vw;
+    height: 600px;
+  }
+}
